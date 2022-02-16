@@ -10,15 +10,18 @@ function iniciar() {
 
         console.log(cadena.length);
 
-        if (cadena.length > 4) {
+        if (cadena.length > 3) {
             e.target.classList.remove("ko");
             e.target.classList.add("ok");
+             
         } else if (cadena.length == 0) {
             e.target.classList.remove("ok");
             e.target.classList.remove("ko");
         } else {
             e.target.classList.remove("ok");
             e.target.classList.add("ko");
+          
+            
         }
     }
 
@@ -48,8 +51,7 @@ function iniciar() {
     buttonreg.addEventListener("mouseenter", fcambio);
     buttonreg.addEventListener("mouseout", fcambio2);
 
-
-
+  
 
 
 

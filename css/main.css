@@ -1,7 +1,6 @@
 body {
     display:flex;
     flex-direction:column;
-    
     background: linear-gradient(150deg, #f44336, #E91E63, #9C27B0);
     background-size: 400% 400%;
     animation: BackgroundGradient 10s ease infinite;
@@ -14,17 +13,11 @@ body {
     100% {background-position: 0% 50%;}
 }
 
-.bg-login {
-  background-image: url('../img/reg.gif');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 
 .btn{
 
   background: linear-gradient(150deg, #f44336, #E91E63, #9C27B0);
-    background-size: 400% 400%;
     animation: BackgroundGradient 3s ease infinite;
     margin: 0;
   color:beige;
@@ -51,20 +44,20 @@ body {
 
 #opt02 .btn:hover {
   border-radius: 50%;
-  border-color:#9C27B0;
-  border-width: 3px;
+  border-color:#f44336;
+  border-width: 0.188em;
+  background-color:#E91E63;
   
 }
 
 .ok{
 
   border-color: green;
-  border-width: 5px;
-  background-image: url('../img/reg.gif');
-  background-position: right;
+  border-width: 0.313em;
+  background-image: url('../img/ok.gif');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-x: 80%;
+  background-position-x: 1%;
    
 
 }
@@ -72,19 +65,19 @@ body {
 .ko{
 
   border-color: red;
-  border-width: 5px;
-  background-image: url('../img/reg.gif');
-  background-position:right;
+  border-width: 0.313em;
+  background-image: url('../img/error.gif');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-x: 80%;
+  background-position-x: 1%;
+  
 
 }
 
 .reg{
 
-  width: 100px;
-  height: 42px;
+  width: 6.25em;
+  height: 2.625em;
   background-image: url('../img/reg.gif');
   background-position:center;
   background-repeat: no-repeat;
@@ -92,5 +85,64 @@ body {
   animation: BackgroundGradient 0s ease infinite;
   
 
+}
 
+.animacion{
+
+  max-width: 25em;
+  max-height: 25em;
+  width: auto;
+  height: auto;
+
+}
+
+#globo1{
+  transform: translate(0%,110%);
+  
+  
+  animation: moveGlobo 10s .5s  infinite;
+
+}
+
+#globo2{
+
+  transform: translate(0%,120%);
+  animation: moveGlobo 9s .5s ease infinite;
+
+}
+
+#globo3{
+
+  transform: translate(0%,150%);
+  animation: moveGlobo 7s .7s ease infinite;
+
+}
+
+#globo4{
+
+  transform: translate(0%,130%);
+  animation: moveGlobo 12s .5s ease infinite;
+
+}
+
+#globo5{
+
+  transform: translate(0%,170%);
+  animation: moveGlobo 7s .8s ease infinite;
+
+}
+
+#globo6{
+
+  transform: translate(0%,140%);
+  animation: moveGlobo 8s .6s ease infinite;
+
+}
+
+
+@keyframes moveGlobo {
+
+  100%{
+    transform:unset;
+  }
 }

@@ -1,0 +1,96 @@
+body {
+    display:flex;
+    flex-direction:column;
+    
+    background: linear-gradient(150deg, #f44336, #E91E63, #9C27B0);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 10s ease infinite;
+    margin: 0;
+}
+
+@keyframes BackgroundGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.bg-login {
+  background-image: url('../img/reg.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn{
+
+  background: linear-gradient(150deg, #f44336, #E91E63, #9C27B0);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 3s ease infinite;
+    margin: 0;
+  color:beige;
+
+}
+
+
+#opt03 .btn {
+  transition: width;
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+
+#opt03 .btn:hover {
+  width: 100%;
+  color:beige;
+}
+
+#opt02 .btn {
+  transition: border-radius;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+#opt02 .btn:hover {
+  border-radius: 50%;
+  border-color:#9C27B0;
+  border-width: 3px;
+  
+}
+
+.ok{
+
+  border-color: green;
+  border-width: 5px;
+  background-image: url('../img/reg.gif');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 80%;
+   
+
+}
+
+.ko{
+
+  border-color: red;
+  border-width: 5px;
+  background-image: url('../img/reg.gif');
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 80%;
+
+}
+
+.reg{
+
+  width: 100px;
+  height: 42px;
+  background-image: url('../img/reg.gif');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:48px;
+  animation: BackgroundGradient 0s ease infinite;
+  
+
+
+}

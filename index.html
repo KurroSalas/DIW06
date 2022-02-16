@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>LOGIN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<body class="login">
+    <div class="container w-75 bg-white mt-5 rounded-3 shadow">
+        <div class="row align-items-lg-stretch">
+            <div class="col bg-login my-5 mx-2">
+            </div>
+            <div class="col py-5">
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Usuario</label>
+                        <input id="usu" type="text" class="form-control pe-3" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input id="passwd" type="password" class="form-control" name="password">                       
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div id="opt03" >
+                        <button type="submit" id="buttonlog" class="btn">Iniciar Sesión</button><br>
+                        <span><a href="#">Recuperar Password</a></span>
+                    </div>
+                    <div id="opt02" class="col my-3 align-items-center">
+                        <div class="mb-3">¿Aun no eres usuario registrado?</div>
+                        <button type="submit" id="buttonreg" class="btn">Registrate</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/verificar.js"></script>
+</body>
+
+</html>
